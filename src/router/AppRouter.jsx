@@ -6,7 +6,6 @@ import RecognizerPage from "../pages/RecognizerPage";
 import Navbar from "../components/Navbar";
 import UploadPage from "../pages/UploadPage";
 import HistoryPage from "../pages/HistoryPage";
-import UploadPage from "../pages/UploadPage";
 import DictionaryPage from "../pages/DictionaryPage";
 
 export default function AppRouter() {
