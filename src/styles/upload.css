@@ -1,0 +1,49 @@
+.upload-container {
+  padding: 40px;
+  animation: fadeIn 0.4s ease;
+}
+
+.upload-box {
+  border: 2px dashed #2e2f33;
+  background: var(--bg-2);
+  border-radius: var(--radius);
+  padding: 40px;
+  text-align: center;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.upload-box:hover {
+  border-color: var(--accent);
+  background: #1b1d21;
+}
+
+.upload-box.dragging {
+  background: #1f2227;
+  border-color: var(--accent);
+}
+
+.upload-text {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+}
+
+.upload-hint {
+  margin-top: 6px;
+  color: #6b6b6b;
+  font-size: 0.85rem;
+}
+
+.progress-wrapper {
+  margin-top: 20px;
+  background: var(--bg-1);
+  border-radius: var(--radius);
+  height: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: var(--radius);
+  transition: width 0.25s ease;
+}

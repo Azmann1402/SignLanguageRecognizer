@@ -1,0 +1,49 @@
+.home-container {
+  padding: 40px;
+  animation: fadeIn 0.4s ease;
+}
+
+.home-hero {
+  margin-bottom: 32px;
+}
+
+.home-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  max-width: 520px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.home-card {
+  background: var(--bg-2);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  border: 1px solid #25272b;
+  transition: var(--transition);
+}
+
+.home-card:hover {
+  border-color: var(--accent);
+  background: #181b20;
+}
+
+.home-card-title {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.home-card-text {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}

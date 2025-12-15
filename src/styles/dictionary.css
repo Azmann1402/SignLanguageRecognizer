@@ -1,0 +1,133 @@
+.dictionary-container {
+  padding: 40px;
+  animation: fadeIn 0.4s ease;
+}
+
+.dictionary-header {
+  margin-bottom: 20px;
+}
+
+.dictionary-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.dictionary-subtitle {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.dictionary-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .dictionary-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dictionary-search {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dictionary-search input {
+  flex: 1;
+  min-width: 200px;
+  background: var(--bg-1);
+  border-radius: var(--radius);
+  border: 1px solid #2a2c31;
+  padding: 10px 12px;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.dictionary-search input::placeholder {
+  color: #5d5d5d;
+}
+
+.dictionary-search select {
+  background: var(--bg-1);
+  border-radius: var(--radius);
+  border: 1px solid #2a2c31;
+  padding: 8px 10px;
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+.sign-list {
+  background: var(--bg-2);
+  border-radius: var(--radius);
+  padding: 18px;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.sign-item {
+  padding: 10px 8px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign-item:hover {
+  background: #181b20;
+}
+
+.sign-item.active {
+  background: #1b1f25;
+  border: 1px solid var(--accent);
+}
+
+.sign-item-name {
+  font-size: 0.95rem;
+}
+
+.sign-item-label {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.sign-details {
+  background: var(--bg-2);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.sign-details-title {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.sign-details-meta {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+
+.sign-preview-box {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius);
+  background: #121317;
+  border: 1px solid #2a2c31;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.sign-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
