@@ -1,10 +1,13 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/auth.css";
 
-export default function LoginPage() {
-  const [form, setForm] = useState({ email: "", password: "" });
+export default function RegisterPage() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -12,14 +15,25 @@ export default function LoginPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("LOGIN DATA READY:", form);
-    // Later: authService.login(form)
+    console.log("REGISTER DATA READY:", form);
+    // Later: authService.register(form)
   };
 
   return (
     <div className="page">
       <form className="auth-container" onSubmit={handleSubmit}>
-        <div className="auth-title">Login</div>
+        <div className="auth-title">Create Account</div>
+
+        <div className="auth-field">
+          <label>Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            onChange={handleChange}
+            required
+          />
+        </div>
 
         <div className="auth-field">
           <label>Email</label>
@@ -43,10 +57,10 @@ export default function LoginPage() {
           />
         </div>
 
-        <button className="auth-btn" type="submit">Login</button>
+        <button className="auth-btn" type="submit">Register</button>
 
         <div className="auth-footer">
-          Don't have an account? <Link to="/register">Register</Link>
+          Already have an account? <Link to="/login">Login</Link>
         </div>
       </form>
     </div>
